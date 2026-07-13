@@ -1,27 +1,27 @@
 class Esorp < Formula
   homepage "https://github.com/ShiroDoromoto/esorp"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/ShiroDoromoto/esorp/releases/download/v0.2.0/esorp_0.2.0_darwin_arm64.tar.gz"
-      sha256 "9d7809963aa275a7cfcad08e6cc2b9e7f340bb24acc8f61f277887a8dbe3b42c"
+      url "https://github.com/ShiroDoromoto/esorp/releases/download/v0.3.0/esorp_0.3.0_darwin_arm64.tar.gz"
+      sha256 "a45a1a37fa74b9ff8877f676406684acb7207b293f33f89d39d5bccf2ea0eacc"
     end
     on_intel do
-      url "https://github.com/ShiroDoromoto/esorp/releases/download/v0.2.0/esorp_0.2.0_darwin_amd64.tar.gz"
-      sha256 "1b3b9080d071a9911a62f61cb98fdb2b30a63335eb1b1d47e4fae9739b05aa7b"
+      url "https://github.com/ShiroDoromoto/esorp/releases/download/v0.3.0/esorp_0.3.0_darwin_amd64.tar.gz"
+      sha256 "f67bec4cfaf78def69a8ee6a86156afde6132723be169affea091e9eb5cd3d1e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ShiroDoromoto/esorp/releases/download/v0.2.0/esorp_0.2.0_linux_arm64.tar.gz"
-      sha256 "f1343d60ccb1d58a7a5c6041a69f2c1732eebdaa69d7333b2a25427b53128042"
+      url "https://github.com/ShiroDoromoto/esorp/releases/download/v0.3.0/esorp_0.3.0_linux_arm64.tar.gz"
+      sha256 "d2d26f911eb9236fb1f5d65b4178e31094531a9a0597495175f4f4d55aba1624"
     end
     on_intel do
-      url "https://github.com/ShiroDoromoto/esorp/releases/download/v0.2.0/esorp_0.2.0_linux_amd64.tar.gz"
-      sha256 "3014d4984a324465612ce9821b4747664fc036981115645b003e7e05e1172de8"
+      url "https://github.com/ShiroDoromoto/esorp/releases/download/v0.3.0/esorp_0.3.0_linux_amd64.tar.gz"
+      sha256 "b76818648db4caaf2ec17540861c964e631b67f5e97ec0c7a10288c1a66d270b"
     end
   end
 
@@ -30,6 +30,6 @@ class Esorp < Formula
   end
 
   test do
-    assert_match "0.2.0", shell_output("#{bin}/esorp version")
+    assert_match "0.3.0", shell_output("#{bin}/esorp version")
   end
 end
